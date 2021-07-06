@@ -43,8 +43,7 @@ const Nav = () => {
                     <a className="col-lg col nav-item nav-link" href="#section1">Services</a>
                     <a className="col-lg col nav-item nav-link" href="#section2">Projects</a>
                     <a className="col-lg col nav-item nav-link" href="#section4">Studies</a>
-                    <a className="col-lg col nav-item nav-link" href="#section5">Contact</a>
-                    <button className='btn text-white w-25 col-lg-2 col-2 offset-lg-2 offset-1 my-2 rounded-0'>Contact me</button>
+                    <a className='btn text-white w-25 col-lg-2 col-2 offset-lg-2 offset-1 my-2 rounded-0' href="#section5">Contact me</a>
                 </div>
             </div>
         </nav>

@@ -27,7 +27,7 @@ body {
         background: -webkit-linear-gradient(#6c40dd, white);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
-    #header nav .navbar-nav button {
+    #header nav .navbar-nav a.btn {
       position: relative;
       right: -33%;
       font-size: 10px;
@@ -296,6 +296,7 @@ body {
   border-radius: 50%; }
 
 #section5 {
+  padding-top: 50px;
   background-color: #001d38; }
   #section5 #formulaire {
     margin-top: 100px;
