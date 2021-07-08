@@ -46,8 +46,8 @@ const Section4 = () => {
 
     return (
 
-        <div id='section4'>
-            <div className="carousel w-50 mx-auto text-center">
+        <div id='section4' className="pt-5">
+            <div className="carousel mx-auto text-center">
                 <div className="row flex-nowrap mx-auto" style={{ left: `${left}%` }}>
 
                     <div className="carousel-content col-12">

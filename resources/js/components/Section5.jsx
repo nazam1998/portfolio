@@ -5,9 +5,11 @@ const Section5 = () => {
     return (
 
         <div id='section5'>
+
+            <h2 className='text-white text-center'>Let’s discuss for <span className='text-danger mt-3'>a project</span> :</h2>
+
             <div id='formulaire' className='text-left container-lg'>
                 <form action="submit">
-                    <h2 className='text-white text-center'>Let’s discuss for <span className='text-danger my-5'>a project</span> :</h2>
                     <div className="row">
                     <div className="form-group col-lg-6 col-12" >
                         <label htmlFor="prenom">First name</label>
