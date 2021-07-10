@@ -284,13 +284,16 @@ body.modal {
     color: #615cfd;
     border: #615cfd solid 0.5px;
 }
-
+#section3 .about-img{
+    background-color: black;
+    background-size: contain;
+}
 #section3 #about-me #dotted {
     position: absolute;
-    top: -40%;
+    top: -30%;
     right: 10%;
     width: 45%;
-    height: 75%;
+    height: 45%;
     z-index: 0;
 }
 
