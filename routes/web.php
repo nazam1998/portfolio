@@ -21,5 +21,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::fallback(function() {
-    return view(welcome);
+    return view("welcome");
 });
+Route::post('sendrequest', 'App\Http\Controllers\AxiosReceiverController@ReceiveIt');

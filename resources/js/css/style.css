@@ -124,6 +124,7 @@ body.modal {
     -webkit-text-fill-color: transparent;
 }
 
+
 #trait::before {
     content: "___  ";
     position: relative;

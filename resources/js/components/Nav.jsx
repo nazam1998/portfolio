@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import Logo from '../images/logo.png'
+import LogoSticky from '../images/logo_sticky.png'
 const Nav = () => {
 
     const [navEtat, setNavEtat] = useState('bg-transparent ');
-
+    const [currentLogo, setCurrentLogo] = useState(Logo);
 
     const change = () => {
 
         if (window.scrollY > 450) {
 
             setNavEtat('sticky');
+            setCurrentLogo(LogoSticky);
 
         } else if (window.scrollY > 330 && window.scrollY <= 450) {
 
@@ -20,6 +22,7 @@ const Nav = () => {
         else {
 
             setNavEtat('bg-transparent');
+            setCurrentLogo(Logo);
 
         }
     }
@@ -31,7 +34,7 @@ const Nav = () => {
     return (
 
         <nav className={"navbar navbar-expand-lg navbar-light mx-auto "} id={navEtat}>
-            <img src={Logo} alt="" className='img-fluid w-25 col-lg-1 col-md-1' />
+            <img src={currentLogo} alt="" className='img-fluid w-25 col-lg-1 col-md-1' />
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
