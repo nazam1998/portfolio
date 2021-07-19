@@ -20,7 +20,7 @@ const Skills = (props) => {
         <div className="col-lg-3 col my-2">
             <div className='container'>
                 <div className="carte">
-                    <div className="box my-5">
+                    <div className="box my-5 text-center">
                         <div className="percent">
                             <svg>
                                 <circle cx='60' cy='60' r='60' className='circle'></circle>
