@@ -355,15 +355,15 @@ body.modal {
 
 #section3 #skills .carte .percent .number h2 {
     color: #777777;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 40px;
     transition: 0.5s;
 }
 
 #section3 #skills .text {
     text-align: right;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: bold;
     transition: 1s;
     color: #444444;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
@@ -458,8 +458,8 @@ body.modal {
 #section5 #formulaire button:active,
 #section5 #formulaire button:hover {
     box-shadow: 1px 1px black;
-    border-radius: 50%;
-    background-color: #c354de;
+    background-color: white;
+    color: #d465ef;
 }
 
 footer {
