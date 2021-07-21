@@ -27,6 +27,6 @@ import './css/style.css';
 import 'bootstrap/dist/js/bootstrap';
 import 'popper.js/dist/popper';
 
-document.title = 'Portfolio Nazam';
+document.title = 'Nazam IT';
 
 ReactDOM.render( < App / > , document.getElementById('root'));

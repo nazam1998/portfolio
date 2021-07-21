@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth')->except('store');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -14,8 +19,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $contact = contact::all();
-        return view('contact/index', compact('contact'));
+        $contacts = contact::all();
+        return view('contact/index', compact('contacts'));
     }
     /**
      * Display the specified resource.
@@ -25,6 +30,8 @@ class ContactController extends Controller
      */
     public function show(contact $contact)
     {
+        $contact->read= true;
+        $contact->save();
         return view('contact/show', compact('contact'));
     }
 
