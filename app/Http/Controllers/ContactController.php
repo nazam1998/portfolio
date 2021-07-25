@@ -30,7 +30,7 @@ class ContactController extends Controller
      */
     public function show(contact $contact)
     {
-        $contact->read= true;
+        $contact->read = true;
         $contact->save();
         return view('contact/show', compact('contact'));
     }
@@ -50,7 +50,7 @@ class ContactController extends Controller
         $contact->last_name = $request->lastname;
         $contact->email = $request->email;
         $contact->msg = $request->msg;
-        $contact->read = false;
+        $contact->read = 1;
         $contact->save();
         return json_encode($validatedData);
     }
@@ -63,12 +63,16 @@ class ContactController extends Controller
      */
     public function update(Request $request)
     {
-        $contacts =  contact::whereId($request->id);
-        foreach ($contacts as $contact) {
-            $contact->read = true;
+        $ids = json_decode($request->ids);
+
+        foreach ($ids as $id) {
+            $contact = Contact::find($id);
+            $contact->read = 0;
+
             $contact->save();
         }
-        return redirect()->back()->with('msg', 'Messages successfully marked as read');
+        return response()->json("Successfully marked as read");
+        // return redirect()->back()->with('msg', 'Messages successfully marked as read');
     }
 
     /**
