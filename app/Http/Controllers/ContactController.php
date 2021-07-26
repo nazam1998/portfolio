@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
 use App\Models\contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -52,6 +54,7 @@ class ContactController extends Controller
         $contact->msg = $request->msg;
         $contact->read = 1;
         $contact->save();
+        Mail::to($contact->email,$contact->first_name)->send(new ContactMail($contact->first_name,$contact->msg));
         return json_encode($validatedData);
     }
 

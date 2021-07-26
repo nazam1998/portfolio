@@ -13,7 +13,6 @@ const Section5 = () => {
     {
 
         let item ={firstname, lastname, email, msg}
-        console.warn(item);
 
         let result = await fetch("http://localhost:8000/api/send/mail", {
             method: 'POST',
