@@ -34,7 +34,7 @@ const Nav = () => {
     return (
 
         <nav className={"navbar navbar-expand-lg navbar-light mx-auto "} id={navEtat}>
-            <img src={currentLogo} alt="" className='img-fluid w-25 col-lg-1 col-md-1' />
+            <img onClick={() =>window.location.href = '#'} src={currentLogo} alt="" className='img-fluid w-25 col-lg-1 col-md-1' id="img-brand" />
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>

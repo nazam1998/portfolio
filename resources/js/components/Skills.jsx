@@ -27,10 +27,9 @@ const Skills = (props) => {
                                 <circle cx='60' cy='60' r='60' className='circle' stroke={props.color} strokeDashoffset={(440 - (440 * bar) / 100 + 40)}></circle>
                             </svg>
                             <div className="number">
-                                <h2>{point}<span>%</span></h2>
+                                <h2>{props.nom}</h2>
                             </div>
                         </div>
-                        <span className='text'>{props.nom}</span>
                     </div>
                 </div>
             </div>

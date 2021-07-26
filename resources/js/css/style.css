@@ -28,13 +28,16 @@ body.modal {
     width: 100%;
     transition: top 1s;
 }
-
+#img-brand {
+    cursor: pointer;
+}
 #header nav .navbar-toggler-icon {
     cursor: pointer;
 }
 
 #header nav .navbar-nav a {
     color: #ffffff;
+    font-size: 20px;
     transition: 1s ease;
 }
 
@@ -47,7 +50,7 @@ body.modal {
 #header nav .navbar-nav a.btn {
     position: relative;
     right: -33%;
-    font-size: 10px;
+    font-size: 15px;
     width: 20%;
     background-color: #d465ef;
     z-index: 4;
@@ -264,7 +267,7 @@ body.modal {
 }
 
 #section3 #about-me p {
-    font-size: 12px;
+    font-size: 17px;
     color: #666666;
 }
 
@@ -281,7 +284,7 @@ body.modal {
 #section3 #about-me button {
     color: white;
     background-color: #615cfd;
-    font-size: 11px;
+    font-size: 15px;
 }
 
 #section3 #about-me button:hover {
@@ -362,7 +365,7 @@ body.modal {
 #section3 #skills .carte .percent .number h2 {
     color: #777777;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 20px;
     transition: 0.5s;
 }
 
