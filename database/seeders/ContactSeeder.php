@@ -20,7 +20,7 @@ class ContactSeeder extends Seeder
             'last_name' => 'Message',
             'email' => 'nazamfr1998@gmail.com',
             'msg' => 'Hello Nazam, Welcome in your backoffice !',
-            'read' => false,
+            'read' => 1,
         ]);
         DB::table('users')->insert([
             'name'=>'Nazam',

@@ -123,6 +123,9 @@ body.modal {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+#sticky .navbar-nav .btn:hover{
+    border: 1px solid #6c40dd
+}
 
 
 #trait::before {
@@ -247,9 +250,10 @@ body.modal {
     width: 100%;
 }
 
-#section2{
+#section2 {
     padding-top: 15px;
 }
+
 #section3 {
     padding-top: 15px;
     margin-top: 300px;
@@ -285,10 +289,12 @@ body.modal {
     color: #615cfd;
     border: #615cfd solid 0.5px;
 }
-#section3 .about-img{
+
+#section3 .about-img {
     background-color: black;
     background-size: contain;
 }
+
 #section3 #about-me #dotted {
     position: absolute;
     top: -30%;
@@ -369,9 +375,18 @@ body.modal {
     text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
 }
 
+#certification {
+    padding-top: 15px;
+    margin-bottom: 50px;
+}
+
+.certif {
+    height: 200px;
+}
+
 #section4 {
     background-image: url("../images/carousel-bg.jpg");
-    height: 500px;
+    height: 600px;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -466,14 +481,15 @@ footer {
     background-color: #001d38;
 }
 
-footer .container span,
+footer .container a,
 footer .container i {
-    cursor: pointer;
+    color: white;
+    text-decoration: none;
     margin: 10px auto;
     transition: 1s;
 }
 
-footer .container span:hover,
+footer .container a:hover,
 footer .container i:hover {
     color: #d465ef;
 }
@@ -505,19 +521,33 @@ html {
     animation: spin infinite 10s linear;
 }
 
-@media (max-width: 380px){
-    #section4{
-        height:500px;
+@media (max-width: 380px) {
+    #section4 {
+        height: 500px;
     }
-    #section4 .carousel{
+
+    #section4 .carousel {
         width: 100%;
     }
+    #section4 .carousel .row .carousel-content{
+        overflow-x: hidden;
+    }
+
     #left {
         left: 0%;
     }
 
     #right {
         right: 0%;
+    }
+
+    .navbar-collapse {
+        background-color: #6c40dd;
+        overflow: hidden;
+
+    }
+    #contactme-nav{
+        padding-right: 10px ;
     }
 
 }
