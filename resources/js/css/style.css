@@ -28,9 +28,11 @@ body.modal {
     width: 100%;
     transition: top 1s;
 }
+
 #img-brand {
     cursor: pointer;
 }
+
 #header nav .navbar-toggler-icon {
     cursor: pointer;
 }
@@ -126,7 +128,8 @@ body.modal {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#sticky .navbar-nav .btn:hover{
+
+#sticky .navbar-nav .btn:hover {
     border: 1px solid #6c40dd
 }
 
@@ -532,7 +535,8 @@ html {
     #section4 .carousel {
         width: 100%;
     }
-    #section4 .carousel .row .carousel-content{
+
+    #section4 .carousel .row .carousel-content {
         overflow-x: hidden;
     }
 
@@ -544,15 +548,18 @@ html {
         right: 0%;
     }
 
+    #contactme-nav {
+        padding-right: 10px;
+    }
+
+}
+
+@media (max-width: 981px) {
     .navbar-collapse {
         background-color: #6c40dd;
         overflow: hidden;
 
     }
-    #contactme-nav{
-        padding-right: 10px ;
-    }
-
 }
 
 @keyframes spin {
