@@ -39,7 +39,7 @@ const Header = () => {
         
                 Hello ! This is {letter.map((e, i) => (e.show !== 'none' && <span key={i}>{e.char}</span>))}
                 <span className='blink'>|</span>
-                <p className='text-center text-white' id='trait'>Web Developper</p>
+                <p className='text-center text-white' id='trait'>Web Developper - Cloud Engineer</p>
             </h1>
             {window.screen.width > 560 && <div id="social-head" className='text-white'>
                 <i className="fab fa-facebook-f"></i>

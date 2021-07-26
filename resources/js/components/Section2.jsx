@@ -25,7 +25,7 @@ const Section2 = () => {
                     <div className="image-pro col-lg-3 col-12 my-3"><img src={Calc} alt="" className="img-fluid" /></div>
 
                 </div>
-                <button className='btn my-5 rounded-0 px-4 py-2'>More Folio</button>
+                {/* <button className='btn my-5 rounded-0 px-4 py-2'>More Folio</button> */}
             </div>
 
         </div>
