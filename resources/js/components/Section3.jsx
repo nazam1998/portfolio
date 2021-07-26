@@ -28,12 +28,16 @@ const Section3 = () => {
             <div className="container">
 
                 <div className="row my-5" id='skills'>
-                    <Skills nom='Html' points={90} color='orange' />
-                    <Skills nom='Css' points={75} color='blue' />
+                    <Skills nom='HTML' points={90} color='orange' />
+                    <Skills nom='CSS' points={75} color='blue' />
                     <Skills nom='Javascript' points={80} color='yellow' />
                     <Skills nom='React' points={60} color='blue' />
                     <Skills nom='Laravel' points={45} color='yellow' />
                     <Skills nom='Bash' points={25} color='black' />
+                    <Skills nom='Python' points={50} color='darkblue' />
+                    <Skills nom='Java' points={50} color='orange' />
+                    <Skills nom='SQL' points={35} color='green' />
+                    <Skills nom='C#' points={35} color='violet' />
                 </div>
             </div>
         </div>
