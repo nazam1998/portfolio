@@ -46,7 +46,7 @@ const Nav = () => {
                     <a className="col-lg col nav-item nav-link" href="#section2">Projects</a>
                     <a className="col-lg col nav-item nav-link" href="#section3">About</a>
                     <a className="col-lg col nav-item nav-link" href="#section4">Studies</a>
-                    <a className='btn text-white w-25 col-lg-2 col-3 offset-lg-2 offset-1 my-2 rounded-0 text-center' href="#section5">Contact me</a>
+                    <a className='btn text-white w-50 col-lg-2 col-4 offset-lg-2 my-2 rounded-0 text-center' href="#section5">Contact me</a>
                 </div>
             </div>
         </nav>
