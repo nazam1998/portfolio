@@ -40,3 +40,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::fallback(function () {
     return view("welcome");
 });
+

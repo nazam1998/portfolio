@@ -555,10 +555,17 @@ html {
 }
 
 @media (max-width: 981px) {
-    .navbar-collapse {
+    .navbar {
         background-color: #6c40dd;
         overflow: hidden;
+        width: 100%;
+    }
 
+    .navbar.sticky a {
+        color: white;
+    }
+    #section4 .carousel .row .carousel-content {
+        overflow: hidden;
     }
 }
 
