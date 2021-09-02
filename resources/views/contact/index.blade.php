@@ -13,7 +13,7 @@
             <span class="col-lg-1">Action</span>
         </div>
         @foreach ($contacts as $contact)
-            <li class="@if ($contact->read) table-secondary unread @endif
+            <li class="@if ($contact->read == 1) font-weight-bold @else table-secondary unread @endif
                 border-bottom row align-items-center justify-content-start py-1 text-left" >
                 <span class="col-lg-1"><input type="checkbox" class="btn-check" id="btncheck{{ $contact->id }}"
                         autocomplete="off" name="read[]" value={{ $contact->id }}></span>
@@ -65,6 +65,8 @@
             checkboxs.forEach(elem => {
                 elem.parentElement.parentElement.classList.remove('unread');
                 elem.parentElement.parentElement.classList.remove('table-primary');
+                elem.parentElement.parentElement.classList.add("table-secondary");
+                elem.parentElement.parentElement.classList.remove("font-weight-bold");
                 elem.checked = false;
 
             })

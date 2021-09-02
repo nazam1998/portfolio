@@ -49,8 +49,9 @@
 
                         @else
                         <li class="nav-item mr-2">
-                            <a href="{{route('contact.index')}}" class="nav-link position-relative">Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill btn-danger">{{App\Models\contact::where('read',1)->count()}}</span></a>
+                            <a href="{{route('contact.index')}}" class="nav-link position-relative">Mails @if(App\Models\contact::where('read',1)->count()!=0)<span class="position-absolute ml-1 top-0 start-100 translate-middle badge rounded-pill btn-danger">{{App\Models\contact::where('read',1)->count()}}</span>@endif</a>
                         </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
