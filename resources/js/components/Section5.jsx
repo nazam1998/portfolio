@@ -14,7 +14,7 @@ const Section5 = () => {
 
         let item ={firstname, lastname, email, msg}
 
-        let result = await fetch("http://localhost:8000/api/send/mail", {
+        let result = await fetch(window.location.href+"api/send/mail", {
             method: 'POST',
             body: JSON.stringify(item),
             headers:{
@@ -23,7 +23,6 @@ const Section5 = () => {
             }
         })
         result = await result.json();
-        console.log("result", result);
 
         setFirstName('')
         setLastName('')
