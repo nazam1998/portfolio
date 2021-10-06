@@ -15,7 +15,7 @@
         @foreach ($contacts as $contact)
             <li class="@if ($contact->read == 1) font-weight-bold @else table-secondary unread @endif
                 border-bottom row align-items-center justify-content-start py-1 text-left" >
-                <span class="col-lg-1"><input type="checkbox" class="btn-check" id="btncheck{{ $contact->id }}"
+                <span class="col-lg-1"><input type="checkbox" class="mycheck" id="btncheck{{ $contact->id }}"
                         autocomplete="off" name="read[]" value={{ $contact->id }}></span>
                 <span class="col-lg-1" scope="row">{{ $contact->id }}</span>
                 <span class="col-lg-1">{{ $contact->first_name }}</span>
@@ -35,12 +35,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script type="text/javascript">
         let button = document.getElementById('btn-read');
-        let checkboxs = document.querySelectorAll('.btn-check');
+        let checkboxs = document.querySelectorAll('.mycheck');
         checked = [];
 
         button.addEventListener('click', () => {
 
-            checkdata = document.querySelectorAll('.btn-check:checked');
+            checkdata = document.querySelectorAll('.mycheck:checked');
             checked = [];
             checkdata.forEach(elem => {
                 checked.push(elem.value);
@@ -51,6 +51,7 @@
                 headers: {
                     'X-CSRF-TOKEN': "{{ csrf_token() }}"
                 },
+                context: document.body,
                 type: 'POST',
                 data: {
                     "ids": JSON.stringify(checked),
@@ -62,6 +63,7 @@
                     console.log(err);
                 }
             });
+            
 
             checkboxs.forEach(elem => {
                 elem.parentElement.parentElement.classList.remove('unread');
