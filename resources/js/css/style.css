@@ -250,7 +250,7 @@ body.modal {
 .image-pro img {
     transition: 1s;
     object-fit: cover;
-    height: 50vh;
+    height: 40vh;
     opacity: 0.99;
     transform: rotate(2deg);
     width: 100%;
