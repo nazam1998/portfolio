@@ -32,7 +32,7 @@ class ContactController extends Controller
      */
     public function show(contact $contact)
     {
-        $contact->read = true;
+        $contact->read = 0;
         $contact->save();
         return view('contact/show', compact('contact'));
     }
@@ -75,7 +75,7 @@ class ContactController extends Controller
             $contact->save();
         }
         return response()->json("Successfully marked as read");
-        // return redirect()->back()->with('msg', 'Messages successfully marked as read');
+
     }
 
     /**
