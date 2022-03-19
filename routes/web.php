@@ -41,3 +41,8 @@ Route::fallback(function () {
     return view("welcome");
 });
 
+Route::get('/mailtest', function(){
+    $first_name = "Hello";
+    $msg= "Lol";
+    return view('contact.template', compact('first_name', 'msg'));
+});
