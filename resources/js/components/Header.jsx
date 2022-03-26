@@ -36,15 +36,15 @@ const Header = () => {
             <img src={Square} alt="" id='square' />
 
             <h1 className='text-center my-5 text-white' id='me'>
-        
+
                 Hello ! This is {letter.map((e, i) => (e.show !== 'none' && <span key={i}>{e.char}</span>))}
                 <span className='blink'>|</span>
                 <p className='text-center text-white' id='trait'>Web Developper - Cloud Engineer</p>
             </h1>
             {window.screen.width > 560 && <div id="social-head" className='text-white'>
-                <i className="fab fa-facebook-f"></i>
-                <i className="fab fa-twitter"></i>
-                <i className="fab fa-instagram"></i>
+                <a className='text-white' href="https://www.linkedin.com/in/nazam-muhammad-872a0019b/"><i className="fab fa-linkedin"></i></a>
+                <a className='text-white' href="https://github.com/nazam1998"><i className="fab fa-github"></i></a>
+                <a className='text-white' href="https://www.instagram.com/nazam.webdev/"><i className="fab fa-instagram"></i></a>
             </div>}
 
 
