@@ -21,9 +21,9 @@
 <body>
     <div>
         <div style="background-color: #6c40dd;" class="w-100">
-            <a href="{{ URL::to('/') }}">
-                <img src="{{ asset('images/logo.png') }}" class="img-fluid w-50" alt="Nazam IT Logo">
-                <span class="text-white" style="font-size: 28px; text-decoration: none;">Nazam IT</span>
+            <a href="{{ URL::to('/') }}" class="row align-items-center justify-content-around">
+                <img src="{{ asset('images/logo.png') }}" class="img-fluid w-25 col-1" style="" alt="Nazam IT Logo">
+                <span class="text-white col-8" style="font-size: 28px; text-decoration: none;">Nazam IT</span>
             </a>
         </div>
         <div class="container mt-5 bg-light">

@@ -32,9 +32,10 @@ const Section3 = () => {
                     <Skills nom='Javascript' points={80} color='yellow' />
                     <Skills nom='CSS' points={75} color='blue' />
                     <Skills nom='React' points={60} color='blue' />
+                    <Skills nom='VueJS' points={80} color='green' />
                     <Skills nom='Python' points={50} color='darkblue' />
                     <Skills nom='Java' points={50} color='orange' />
-                    <Skills nom='Laravel' points={45} color='yellow' />
+                    <Skills nom='Laravel' points={70} color='yellow' />
                     <Skills nom='SQL' points={35} color='green' />
                     <Skills nom='Bash' points={25} color='black' />
                     <Skills nom='C#' points={15} color='violet' />

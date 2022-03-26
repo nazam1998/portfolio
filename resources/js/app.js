@@ -30,3 +30,10 @@ import 'popper.js/dist/popper';
 document.title = 'Nazam IT';
 
 ReactDOM.render( < App / > , document.getElementById('root'));
+window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = {
+    _renderers: {},
+    supportsFiber: true,
+    inject: () => ({}),
+    onCommitFiberRoot: () => ({}),
+    onCommitFiberUnmount: () => ({}),
+};

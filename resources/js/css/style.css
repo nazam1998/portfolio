@@ -243,7 +243,6 @@ body.modal {
 .image-pro:hover img {
     left: 0;
     transform: rotate(0deg);
-    height: 45vh;
     opacity: 1;
 }
 

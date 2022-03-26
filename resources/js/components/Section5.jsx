@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import router from 'react-router';
-
+import axios from 'axios';
 const Section5 = () => {
 
     const[firstname, setFirstName] = useState('');
@@ -14,15 +14,22 @@ const Section5 = () => {
 
         let item ={firstname, lastname, email, msg}
 
-        let result = await fetch(window.location.href+"api/send/mail", {
-            method: 'POST',
-            body: JSON.stringify(item),
+
+        axios.post("/api/send/mail", item,
+        {
             headers:{
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        })
-        result = await result.json();
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        }
+    }
+    ).then((response) => {
+        console.log(response);
+        setSuccess('success');
+    }).catch((err) => {
+        setSuccess('error');
+
+    });
+
 
         setFirstName('')
         setLastName('')

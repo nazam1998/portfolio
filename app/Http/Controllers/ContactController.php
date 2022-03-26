@@ -55,7 +55,7 @@ class ContactController extends Controller
         $contact->read = 1;
         $contact->save();
         Mail::to($contact->email,$contact->first_name)->send(new ContactMail($contact->first_name,$contact->msg));
-        return json_encode($validatedData);
+        return response()->json(['msg'=>'Message envoyé avec succès','data'=>$validatedData, 'status'=>200]);
     }
 
     /**
