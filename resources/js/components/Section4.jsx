@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Section4 = () => {
 
-    const [left, setLeft] = useState(-400);
+    const [left, setLeft] = useState(-500);
 
     const moveNext = () => {
         if (left < 0) {
@@ -11,13 +11,13 @@ const Section4 = () => {
 
         } else {
 
-            setLeft(-400);
+            setLeft(-500);
 
         }
     }
 
     const movePrev = () => {
-        if (left >= -300) {
+        if (left >= -400) {
 
             setLeft(left - 100);
 
@@ -31,7 +31,7 @@ const Section4 = () => {
     useEffect(() => {
 
         const id = setTimeout(() => {
-            if (left >= -300) {
+            if (left >= -400) {
 
                 setLeft(left - 100);
 
