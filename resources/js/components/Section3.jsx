@@ -25,20 +25,19 @@ const Section3 = () => {
                     {window.screen.width < 800 && <button className="btn rounded-0 px-4 py-2 my-5 mx-auto" onClick={() => { window.open('/cv/Nazam Muhammad CV Full Stack Developer.pdf',"_blank") }} ><i className="fa fa-download"></i> Download CV</button>}
                 </div>
             </div>
-            <div className="container">
-
+            <div className="container text-center mt-5">
+        <h1 className="mt-5">Skills</h1>
                 <div className="row my-5" id='skills'>
-                    <Skills nom='HTML' points={90} color='orange' />
-                    <Skills nom='Javascript' points={80} color='yellow' />
-                    <Skills nom='CSS' points={75} color='blue' />
-                    <Skills nom='React' points={60} color='blue' />
-                    <Skills nom='VueJS' points={80} color='green' />
-                    <Skills nom='Python' points={50} color='darkblue' />
-                    <Skills nom='Java' points={50} color='orange' />
-                    <Skills nom='Laravel' points={70} color='yellow' />
-                    <Skills nom='SQL' points={35} color='green' />
-                    <Skills nom='Bash' points={25} color='black' />
-                    <Skills nom='C#' points={15} color='violet' />
+                    <Skills nom='HTML' icon="fab fa-html5" points={90} color='orange' />
+                    <Skills nom='CSS' icon="fab fa-css3-alt" points={75} color='#27a4d8' />
+                    <Skills nom='Javascript' icon="fab fa-js" points={80} color='#efd81d' />
+                    <Skills nom='React' icon="fab fa-react" points={60} color='#5ed3f3' />
+                    <Skills nom='VueJS' icon="fab fa-vuejs" points={80} color='#3fb27f' />
+                    <Skills nom='Python' icon="fab fa-python" points={50} color='darkblue' />
+                    <Skills nom='Laravel' icon="fab fa-laravel" points={70} color='orange' />
+                    <Skills nom='PHP' icon="fab fa-php" points={50} color='#7377ad' />
+                    <Skills nom='SQL' icon="fas fa-database" points={35} color='grey' />
+                    <Skills nom='Bash' icon="fas fa-hashtag" points={25} color='black' />
                 </div>
             </div>
         </div>
