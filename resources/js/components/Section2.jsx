@@ -17,14 +17,15 @@ const Section2 = () => {
 
                 <div className='row mx-auto text-center justify-content-center'>
 
-                    <div className="image-pro col-lg-5 col-12 my-3"><img src={Crownfunding} alt="" className="img-fluid" /><div className="description p-5">
+                    <div className="image-pro col-lg-5 col-12 my-3"><img src={Crownfunding} alt="" className="img-fluid" />
+                    <div className="description p-4">
                     <p>Training Project</p>
                     <p>crownfunding platform with pledge system</p>
                     <p>Tech used: Vuejs, Bootstrap-Vue</p>
                     </div>
                     </div>
                     <div className="image-pro col-lg-5 col-12 my-3"><img src={AlForqane} alt="" className="img-fluid" />
-                        <div className="description p-5">
+                        <div className="description p-4">
                             <p>Project for a Non Profit Organization</p>
                             <p>Blog with newsletter system and subscription and contact form</p>
                             <p>Tech used: Wordpress</p>
@@ -32,21 +33,21 @@ const Section2 = () => {
                     </div>
                     <div className="w-100"></div>
                     <div className="image-pro col-lg-5 col-12 my-3"><img src={Bootstrap} alt="" className="img-fluid" />
-                        <div className="description p-5">
+                        <div className="description p-4">
                             <p>Training Project</p>
                             <p>Landing Page which challenge was to finish it in 3 days without using any frontend framework.</p>
                             <p>Tech used: HTML, CSS</p>
                         </div>
                     </div>
                     <div className="image-pro col-lg-5 col-12 my-3"><img src={Emporium} alt="" className="img-fluid" />
-                        <div className="description p-5">
+                        <div className="description p-4">
                             <p>Training Project</p>
                             <p>Landing page with a carousel done with vanilla js</p>
                             <p>Tech used: HTML, CSS, Javascript, Bootstrap</p>
                         </div>
                     </div>
                     <div className="image-pro col-lg-5 col-12 my-3"><img src={Code_wizard} alt="" className="img-fluid" />
-                        <div className="description p-5">
+                        <div className="description p-4">
                         <p>Internship project</p>
                         <p>Platform where you can register to a training and where you can manage your profil. The biggest challenge was to make a role management system, where you could dynamically assign permissions to a role</p>
                         <p>Tech used: HTML, CSS, Javascript, PHP(Laravel), Boostrap</p>
