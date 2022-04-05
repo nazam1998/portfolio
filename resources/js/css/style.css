@@ -117,10 +117,14 @@ body.modal {
     border-bottom: #6c40dd 1px solid;
 }
 
-#sticky .navbar-nav a:not(a:last-child) {
+#sticky .navbar-nav a:not(a#nav-contact) {
 
     color: #6c40dd !important;
     transition: 1s ease;
+}
+
+#sticky .navbar-nav #nav-contact {
+    color: white !important;
 }
 
 #sticky .navbar-nav a:hover {
@@ -238,12 +242,21 @@ body.modal {
 
 .image-pro {
     transition: 1s;
+    position: relative;
 }
 
-.image-pro:hover img {
-    left: 0;
-    transform: rotate(0deg);
-    opacity: 1;
+.image-pro .description {
+    position: absolute;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 94%;
+    margin: 0 auto;
+    transition: 1s;
+    z-index: 4;
+    left: 3%;
+    bottom: 0;
+    object-fit: cover;
+    opacity: 0;
 }
 
 .image-pro img {
@@ -251,9 +264,21 @@ body.modal {
     object-fit: cover;
     height: 40vh;
     opacity: 0.99;
-    transform: rotate(2deg);
     width: 100%;
 }
+
+.image-pro:hover .description {
+    height: 100%;
+    opacity: 1;
+
+}
+
+.image-pro:hover img {
+    left: 0;
+    opacity: 1;
+}
+
+
 
 #section2 {
     padding-top: 15px;
@@ -563,6 +588,7 @@ html {
     .navbar.sticky a {
         color: white;
     }
+
     #section4 .carousel .row .carousel-content {
         overflow: hidden;
     }

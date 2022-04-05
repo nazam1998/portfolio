@@ -70,15 +70,22 @@ const Section4 = () => {
                         <h4 className='text-danger'>2019-2020</h4>
                         <p>Training at Molengeek and internship</p>
                         <p>Coding School 10</p>
-                        <span>6-month hard-training as a full-stack web developer</span>
+                        <span>6-month hard-training as a full-stack web developer</span><br/>
                         <span>Worked on two projects (an event platform and a wordpress non-profit organization website)</span>
                     </div>
                     <div className="carousel-content col-12">
                         <h4 className='text-danger'>2020-2021</h4>
                         <p>Training at Molengeek</p>
                         <p>AWS re/Start Program (Cloud Engineering)</p>
-                        <span>3-month hard-training as a cloud practioner and got certified</span>
+                        <span>3-month hard-training as a cloud practioner and got certified</span><br/>
                         <span>Got another as a AWS Solution Architect</span>
+                    </div>
+                    <div className="carousel-content col-12">
+                        <h4 className='text-danger'>2021-2022</h4>
+                        <p>Advanced Training at Molengeek</p>
+                        <p>Level Up School</p>
+                        <span>3-month hard-training as a full-stack web developer in Laravel and VueJS</span><br/>
+                        <span>Worked on many projects, including an inventory management system</span>
                     </div>
                 </div>
                 {window.screen.width > 800 && <div><i onClick={moveNext} className="fas fa-arrow-left  fa-2x text-white" id='left'></i>

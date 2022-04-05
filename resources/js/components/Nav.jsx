@@ -46,7 +46,13 @@ const Nav = () => {
                     <a className="col-lg col nav-item nav-link" href="#section2">Projects</a>
                     <a className="col-lg col nav-item nav-link" href="#section3">About</a>
                     <a className="col-lg col nav-item nav-link" href="#section4">Studies</a>
-                    <a className='btn text-white w-50 col-lg-2 col-4 offset-lg-2 my-2 rounded-0 text-center' href="#section5">Contact me</a>
+                    <a className='btn text-white w-50 col-lg-2 col-4 offset-lg-2 my-2 rounded-0 text-center' id="nav-contact" href="#section5">Contact me</a>
+                    {window.screen.width <= 560 &&<a className="col-lg col nav-item nav-link" href="#section4">
+                <a className='mx-2' href="https://www.linkedin.com/in/nazam-muhammad-872a0019b/"><i className="fab fa-linkedin"></i></a>
+                <a className='mx-2' href="https://github.com/nazam1998"><i className="fab fa-github"></i></a>
+                <a className={`mx-2 ${window.scrollY > 450 && 'text-danger'}`} href="https://www.instagram.com/nazam.webdev/"><i className="fab fa-instagram"></i></a>
+            </a>}
+
                 </div>
             </div>
         </nav>
